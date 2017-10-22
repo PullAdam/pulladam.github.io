@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
+
 body {
-  background-color: #4f10ce
+  background: #3729e8
 }
 h1 {
-  color: #ffffff
+  color: #ffffff;
+  text-shadow: 0px 2px 15px #000000;
+  font-size: 48px;
+  text-align:center;
+  font-family: 'Droid Sans', sans-serif;
 }
-h1 {  
-  text-shadow: 5px 5px 7px #4c9fff;
-}
-h1 {
-  font-size: 400%
-}
-h1 {
-  text-align: center
+
+p {
+  color: #e2e2e2;
+  font-size: 22px;
+  text-align:center;
+  font-family: 'Droid Sans', sans-serif;
 }
