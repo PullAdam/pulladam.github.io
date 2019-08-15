@@ -76,37 +76,81 @@ body {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .box {
     grid-template-columns: 0.535fr 1fr;
   }
 
   .page {
     font-size: 30px;
+    grid-template-columns: 1fr;
   }
 
   .card {
     display: none;
   }
+
+  .button {
+    font-size: 2.7vh;
+  }
+
+  .top_bar {
+    padding: 10px;
+  }
+
+  .Card {
+    display: none;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 850px) {
   body {
     padding: 0;
     margin: 0;
   }
 
-  .box {
-    grid-template-columns: 1fr;
-  }
-  .page {
-    font-size: 15px;
-    margin: 5;
-    width: 100%;
-  }
-
   .background {
     margin: 0;
     border-radius: 0;
+  }
+
+  .button {
+    font-size: 2vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .top_bar {
+    padding: 7px;
+  }
+
+  .page {
+    grid-template-columns: 1fr;
+    font-size: 15px;
+    margin: 10px;
+  }
+
+  .Card {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .button {
+    font-size: 1vh;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+@media (max-width: 300px) {
+  .button {
+    font-size: 1vh;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
 }
