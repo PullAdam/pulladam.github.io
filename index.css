@@ -1,6 +1,7 @@
 body {
   background-color: #a14900;
   margin: 0;
+  overflow-y: hidden;
 }
 
 .button {
@@ -15,6 +16,7 @@ body {
   display: block;
   border-radius: 7px;
   cursor: pointer;
+  background: none;
 }
 .button:hover {
   box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.6);
@@ -70,6 +72,15 @@ body {
   height: auto;
   border-radius: 20px;
   text-align: center;
+}
+
+.pricing {
+  background-color: a14900;
+  font-size: 3vh;
+  font-family: "Droid Sans", sans-serif;
+  color: white;
+  text-align: center;
+  margin: 20px;
 }
 
 @media (max-width: 1500px) {
