@@ -1,79 +1,282 @@
-body {
-  background-image: url("dark-galaxy-wallpaper.jpg");
-  background-color: #000238;
-  background-size: cover;
-  margin: 50px;
+Body {
+    background-color: #0000FF;
+    margin: 0px;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
-.topnav {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  box-shadow: 0px 0px 18px #848ab3;
-  border-radius: 10px;
-  color: #848ab3;
-  background-color: #020012;
+.Special_Deal{
+    background-color: #ff6600;
+    margin: 0;
+    padding: 0;
 }
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: "Cabin", sans-serif;
+.Special_Deal h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #000;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
 }
 
-.topnav a:hover {
-  background-color: #848ab3;
-  color: black;
+.Top_Bar {
+    background-color: #fff;
+    box-shadow: 0px 0px 20px #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-.topnav a.active {
-  background-color: #4a4e69;
-  color: white;
+.Top_Bar_Inner {
+    display: flex;
+}
+
+img {
+    height: auto;
+    margin: 10px;
+    margin: 20px;
+    color: rgb(0, 0, 120);
+    vertical-align: bottom;
+}
+
+.Link_Style {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+    margin-top: 30px;
+    color: rgb(0, 24, 90);
+}
+
+.Link_Style a:hover {
+    display: inline-block;
+    color: black;
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.Link_Style a {
+    margin-right: 15px;
+}
+
+.About_Me {
+    text-decoration: underline;
+    margin-right: 30px;
+    color: rgb(0, 24, 90);
+}
+
+.Printing_Details {
+    color: rgb(0, 24, 90);
+    text-decoration: none;
+}
+
+.Order {
+    color: rgb(0, 24, 90);
+    text-decoration: none;
+}
+
+.Examples {
+    color: rgb(0, 24, 90);
+    text-decoration: none;
 }
 
 h1 {
-  color: #ffffff;
-  font-size: 29px;
-  margin-left: auto;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-right: 25px;
-  font-family: "Satisfy", cursive;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
-  margin-top: 50px;
+h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -30px;
+    padding: 0;
 }
 
-.grid-item {
-  color: #848ab3;
-  font-family: "Cabin", sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  padding: 15px;
-  background-color: #020012;
-  border-radius: 20px;
-  box-shadow: 0px 0px 18px #848ab3;
+/* ------------------------------------------------------------------------------- */
+
+.Bio {
+    display: flex;
+    justify-content: center;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 230px;
 }
 
-@media (max-width: 1000px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.Bio img{
+    width: 500px;
+    border-style: solid;
+    border-width: 8px;
+    border-radius: 10px;
+    border-color: rgb(0, 24, 90);
+    box-shadow: 5px 5px 10px;
 }
 
-@media (max-width: 750px) {
-  .grid-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
+.Bio p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+    color: rgb(221, 224, 253);
+    margin-right: 20px;
+}
 
-  h1 {
-    display: none;
-  }
+/* ------------------------------------------------------------------------------- */
+
+.Example_container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 100px;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.Example_1 {
+    width: 300px;
+    border-style: solid;
+    border-width: 8px;
+    border-radius: 10px;
+    border-color: rgb(0, 24, 90);
+    box-shadow: 5px 5px 10px;
+}
+
+.Example_2 {
+    width: 300px;
+    border-style: solid;
+    border-width: 8px;
+    border-radius: 10px;
+    border-color: rgb(0, 24, 90);
+    box-shadow: 5px 5px 10px;
+}
+
+.Example_3 {
+    width: 300px;
+    border-style: solid;
+    border-width: 8px;
+    border-radius: 10px;
+    border-color: rgb(0, 24, 90);
+    box-shadow: 5px 5px 10px;
+}
+
+.Example_4 {
+    width: 300px;
+    border-style: solid;
+    border-width: 8px;
+    border-radius: 10px;
+    border-color: rgb(0, 24, 90);
+    box-shadow: 5px 5px 10px;
+}
+
+.Example_5 {
+    width: 300px;
+    border-style: solid;
+    border-width: 8px;
+    border-radius: 10px;
+    border-color: rgb(0, 24, 90);
+    box-shadow: 5px 5px 10px;
+}
+
+.Example_6 {
+    width: 300px;
+    border-style: solid;
+    border-width: 8px;
+    border-radius: 10px;
+    border-color: rgb(0, 24, 90);
+    box-shadow: 5px 5px 10px;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+.Main_Box {
+    background-color: rgb(0, 24, 90);
+}
+
+/* ------------------------------------------------------------------------------- */
+
+.Printer_Details {
+    display: flex;
+    justify-content: center;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 110px;
+    margin-bottom: 25px;
+}
+
+.Printer_Details img {
+    border-style: solid;
+    border-width: 8px;
+    border-radius: 10px;
+    border-color: rgb(0, 24, 90);
+    box-shadow: 5px 5px 10px;
+    width: 450px;
+}
+
+.Printer_Details p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+    color: rgb(221, 224, 253);
+    margin-left: 30px;
+}
+
+.Printer_Details li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+    color: rgb(221, 224, 253);
+    margin-left: 30px;
+    list-style-type: disc;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+.Filament_Details {
+    display: flex;
+    justify-content: center;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 110px;
+    margin-bottom: 100px;
+}
+
+.Filament_Details img {
+    border-style: solid;
+    border-width: 8px;
+    border-radius: 10px;
+    border-color: rgb(0, 24, 90);
+    box-shadow: 5px 5px 10px;
+    width: 415px;
+}
+
+.Filament_Details p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+    color: rgb(221, 224, 253);
+    margin-left: 30px;
+}
+
+.Filament_Details li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+    color: rgb(221, 224, 253);
+    margin-left: 30px;
+    list-style-type: disc;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    color: rgb(0, 24, 90);
+    text-align: center;
+}
+
+.Form_Box {
+    align-content: center;
+    background-color: rgb(0, 24, 90);
+    text-align: center;
+    padding-top: 50px;
 }
