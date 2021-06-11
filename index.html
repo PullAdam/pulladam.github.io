@@ -1,9 +1,444 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="Index.css" />
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+            
+            body {
+  background-color: #0000ff;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.Special_Deal {
+  background-color: #ff6600;
+  margin: 0;
+  padding: 0;
+}
+
+.Special_Deal h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #000;
+  padding: 5px;
+  margin: 0;
+  text-align: center;
+}
+
+.Top_Bar {
+  background-color: #fff;
+  box-shadow: 0px 0px 20px #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 99999;
+}
+
+.Top_Bar_Inner {
+  display: flex;
+}
+
+img {
+  height: auto;
+  margin-right: 50px;
+  margin: 20px;
+  color: rgb(0, 0, 120);
+  vertical-align: bottom;
+}
+
+.Link_Style {
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  background-color: transparent;
+  border: none;
+  margin-top: 30px;
+  color: rgb(0, 24, 90);
+}
+
+.Link_Style a:hover {
+  color: black;
+  transform: scale(1.1);
+}
+
+.Link_Style a {
+  margin-right: 15px;
+  transition-duration: 0.3s;
+  display: inline-block;
+}
+
+.About_Me {
+  margin-right: 30px;
+  color: rgb(0, 24, 90);
+  text-decoration: none;
+}
+
+.Printing_Details {
+  color: rgb(0, 24, 90);
+  text-decoration: none;
+}
+
+.Order {
+  color: rgb(0, 24, 90);
+  text-decoration: none;
+}
+
+.Filament_Details2 {
+  color: rgb(0, 24, 90);
+  text-decoration: none;
+}
+
+.Examples {
+  color: rgb(0, 24, 90);
+  text-decoration: none;
+}
+
+.Shipping {
+  color: rgb(0, 24, 90);
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
+  margin-left: 30px;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+.Bio {
+  display: flex;
+  justify-content: center;
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-top: 220px;
+  margin-bottom: 130px;
+}
+
+.Bio img {
+  width: 350px;
+  height: 350px;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 10px;
+  border-color: rgb(0, 24, 90);
+  box-shadow: 5px 5px 10px;
+  margin-right: 50px;
+}
+
+.Bio p {
+  font-family: "Oswald", sans-serif;
+  font-size: 19px;
+  color: rgb(221, 224, 253);
+  margin-right: 20px;
+  align-self: center;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+.Example_container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 100px;
+  justify-content: center;
+  vertical-align: middle;
+  margin-top: -20px;
+}
+
+.Example_1 {
+  width: 225px;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 10px;
+  border-color: rgb(0, 24, 90);
+  box-shadow: 5px 5px 10px;
+}
+
+.Example_2 {
+  width: 225px;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 10px;
+  border-color: rgb(0, 24, 90);
+  box-shadow: 5px 5px 10px;
+}
+
+.Example_3 {
+  width: 225px;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 10px;
+  border-color: rgb(0, 24, 90);
+  box-shadow: 5px 5px 10px;
+}
+
+.Example_4 {
+  width: 225px;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 10px;
+  border-color: rgb(0, 24, 90);
+  box-shadow: 5px 5px 10px;
+}
+
+.Example_5 {
+  width: 225px;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 10px;
+  border-color: rgb(0, 24, 90);
+  box-shadow: 5px 5px 10px;
+}
+
+.Example_6 {
+  width: 225px;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 10px;
+  border-color: rgb(0, 24, 90);
+  box-shadow: 5px 5px 10px;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+.shipping_map img {
+  width: 700px;
+  margin-right: 380px;
+  margin-left: 380px;
+  margin-bottom: 0px;
+
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 10px;
+  border-color: rgb(0, 24, 90);
+  box-shadow: 5px 5px 10px;
+  transition: transform .5s ease;
+  transform: scale(0.9);
+}
+
+.shipping_map img:hover {
+  transform: scale(1);
+}
+
+/* ------------------------------------------------------------------------------- */
+.Printer_Details {
+  display: flex;
+  justify-content: center;
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-top: 110px;
+  margin-bottom: 25px;
+}
+
+.Printer_Details img {
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 10px;
+  border-color: rgb(0, 24, 90);
+  box-shadow: 5px 5px 10px;
+  width: 350px;
+}
+
+.Printer_Details p {
+  font-family: "Oswald", sans-serif;
+  font-size: 19px;
+  color: rgb(221, 224, 253);
+  margin-left: 30px;
+}
+
+.Printer_Details li {
+  font-family: "Oswald", sans-serif;
+  font-size: 19px;
+  color: rgb(221, 224, 253);
+  margin-left: 30px;
+  list-style-type: disc;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+.Filament_Details {
+  display: flex;
+  justify-content: center;
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-top: 110px;
+  margin-bottom: 100px;
+}
+
+.Filament_Details img {
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 10px;
+  border-color: rgb(0, 24, 90);
+  box-shadow: 5px 5px 10px;
+  width: 350px;
+}
+
+.Filament_Details p {
+  font-family: "Oswald", sans-serif;
+  font-size: 19px;
+  color: rgb(221, 224, 253);
+}
+
+.Filament_Details li {
+  font-family: "Oswald", sans-serif;
+  font-size: 19px;
+  color: rgb(221, 224, 253);
+  list-style-type: disc;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+  color: rgb(0, 24, 90);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.Form_Box {
+  align-content: center;
+  background-color: rgb(0, 24, 90);
+  text-align: center;
+  padding-top: 50px;
+}
+
+h6 {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  color: #0000ff;
+  align-self: center;
+  padding-bottom: 150px;
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: center;
+}
+
+h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -40px;
+  padding: 0;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 1920px) {
+  .Bio p {
+    margin-left: 200px;
+    font-size: 29px;
+    margin-top: 50px;
+  }
+  .Bio img {
+    width: 600px;
+    height: 600px;
+    margin-right: 200px;
+    margin-top: 30px;
+  }
+
+  .Printer_Details img {
+    width: 600px;
+    margin-top: 150px;
+    margin-left: 200px;
+  }
+
+  .Printer_Details p {
+    margin-top: 150px;
+    font-size: 29px;
+    margin-right: 200px;
+  }
+
+  .Printer_Details li {
+    font-size: 29px;
+  }
+
+  .Note {
+    margin: 0;
+    margin-top: -30px;
+  }
+
+  .shipping_map img {
+    width: 1235px;
+    margin-top: 200px;
+  }
+
+  .Filament_Details img {
+    width: 1000px;
+    height: 600px;
+    margin-top: 150px;
+    margin-right: 200px;
+  }
+
+  .Filament_Details p {
+    margin-top: 150px;
+    font-size: 29px;
+    margin-left: 200px;
+  }
+
+  .Filament_Details li {
+    font-size: 29px;
+    margin-left: 200px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 100px;
+    margin-top: 300px;
+  }
+
+  h6 {
+    font-size: 40px;
+  }
+
+  h4 {
+    margin-top: -75px;
+  }
+
+  .Note {
+    margin-top: -100px;
+  }
+
+  .Example_1 {
+    width: 380px;
+    margin-left: 200px;
+  }
+
+  .Example_2 {
+    width: 380px;
+  }
+
+  .Example_3 {
+    width: 380px;
+    margin-right: 200px;
+  }
+
+  .Example_4 {
+    width: 380px;
+  }
+
+  .Example_5 {
+    width: 380px;
+    margin-left: 200px;
+  }
+
+  .Example_6 {
+    width: 380px;
+    margin-right: 200px;
+  }
+}
+            
           </style>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
