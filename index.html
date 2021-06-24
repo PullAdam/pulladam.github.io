@@ -1,545 +1,325 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="Index.css" />
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
             
             body {
-  background-color: #0000ff;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
+    background-color: #0000ff;
+    margin: 0;
+    padding: 0;
 }
 
-.Special_Deal {
-  background-color: #ff6600;
-  margin: 0;
-  padding: 0;
+.upper_nav {
+    background-color: #ff6600;
+    margin: 0;
+    padding: 5px;
 }
 
-.Special_Deal h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  color: #000;
-  padding: 5px;
-  margin: 0;
-  text-align: center;
+.upper_nav p {
+    font-size: 12px;
+    font-family: "Oswald", sans-serif;
+    padding: 5px;
+    text-align: center;
+    margin: 0;
 }
 
-.Top_Bar {
-  background-color: #fff;
-  box-shadow: 0px 0px 20px #fff;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  z-index: 99999;
+nav {
+    background-color: #fff;
+    box-shadow: 0px 0px 20px #fff;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
 }
 
-.Top_Bar_Inner {
-  display: flex;
+nav img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 15px;
 }
 
-img {
-  height: auto;
-  margin-right: 50px;
-  margin: 20px;
-  color: rgb(0, 0, 120);
-  vertical-align: bottom;
-}
-
-.Link_Style {
-  font-family: "Oswald", sans-serif;
-  font-size: 40px;
-  background-color: transparent;
-  border: none;
-  margin-top: 30px;
-  color: rgb(0, 24, 90);
-}
-
-.Link_Style a:hover {
-  color: black;
-  transform: scale(1.1);
-}
-
-.Link_Style a {
-  margin-right: 15px;
-  transition-duration: 0.3s;
-  display: inline-block;
-}
-
-.About_Me {
-  margin-right: 30px;
-  color: rgb(0, 24, 90);
-  text-decoration: none;
-}
-
-.Printing_Details {
-  color: rgb(0, 24, 90);
-  text-decoration: none;
-}
-
-.Order {
-  color: rgb(0, 24, 90);
-  text-decoration: none;
-}
-
-.Filament_Details2 {
-  color: rgb(0, 24, 90);
-  text-decoration: none;
-}
-
-.Examples {
-  color: rgb(0, 24, 90);
-  text-decoration: none;
-}
-
-.Shipping {
-  color: rgb(0, 24, 90);
-  text-decoration: none;
-}
-
-h1 {
-  font-family: "Oswald", sans-serif;
-  font-size: 30px;
-  color: #fff;
-  text-align: center;
-  margin-top: 0;
-  margin-left: 30px;
-}
 
 /* ------------------------------------------------------------------------------- */
 
-.Bio {
-  display: flex;
-  justify-content: center;
-  margin-right: 200px;
-  margin-left: 200px;
-  margin-top: 220px;
-  margin-bottom: 130px;
+
+.buisness_pitch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background-color: rgb(0, 24, 90);
+    padding: 40px;
 }
 
-.Bio img {
-  width: 350px;
-  height: 350px;
-  border-style: solid;
-  border-width: 8px;
-  border-radius: 10px;
-  border-color: rgb(0, 24, 90);
-  box-shadow: 5px 5px 10px;
-  margin-right: 50px;
+.buisness_pitch img {
+    width: auto;
+    height: 100%;
+    border-radius: 5px 5px 75px 5px;
 }
 
-.Bio p {
-  font-family: "Oswald", sans-serif;
-  font-size: 19px;
-  color: rgb(221, 224, 253);
-  margin-right: 20px;
-  align-self: center;
+.buisness_pitch p {
+    font-family: 'Staatliches', cursive;
+    color: rgb(221, 224, 253);
+    font-size: 60px;
+    margin: 40px;
 }
+
+.description {
+    font-family: "Oswald", sans-serif;
+    color: rgb(221, 224, 253);
+    font-size: 15px;
+    margin: 10%;
+}
+
 
 /* ------------------------------------------------------------------------------- */
+
+
+.triangle {
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(to bottom right, rgb(0, 24, 90) 50%, transparent 0);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: left, right;
+    margin-left: 2%;
+}
 
 .Example_container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  margin-top: 100px;
-  justify-content: center;
-  vertical-align: middle;
-  margin-top: -20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 100px;
+    justify-content: center;
+    vertical-align: middle;
+    margin-top: -20px;
+    grid-gap: 50px;
 }
-
+  
 .Example_1 {
-  width: 225px;
-  border-style: solid;
-  border-width: 8px;
-  border-radius: 10px;
-  border-color: rgb(0, 24, 90);
-  box-shadow: 5px 5px 10px;
+    border-radius: 30px 10px 10px 10px;
+    width: 375px;
 }
-
+  
 .Example_2 {
-  width: 225px;
-  border-style: solid;
-  border-width: 8px;
-  border-radius: 10px;
-  border-color: rgb(0, 24, 90);
-  box-shadow: 5px 5px 10px;
+    border-radius: 10px 30px 10px 10px;
+    width: 375px;
 }
-
+  
 .Example_3 {
-  width: 225px;
-  border-style: solid;
-  border-width: 8px;
-  border-radius: 10px;
-  border-color: rgb(0, 24, 90);
-  box-shadow: 5px 5px 10px;
+    border-radius: 10px 10px 10px 10px;
+    width: 375px;
 }
 
 .Example_4 {
-  width: 225px;
-  border-style: solid;
-  border-width: 8px;
-  border-radius: 10px;
-  border-color: rgb(0, 24, 90);
-  box-shadow: 5px 5px 10px;
+    border-radius: 10px 10px 10px 10px;
+    width: 375px;
 }
-
+  
 .Example_5 {
-  width: 225px;
-  border-style: solid;
-  border-width: 8px;
-  border-radius: 10px;
-  border-color: rgb(0, 24, 90);
-  box-shadow: 5px 5px 10px;
+    border-radius: 10px 10px 10px 30px;
+    width: 375px;
 }
-
+  
 .Example_6 {
-  width: 225px;
-  border-style: solid;
-  border-width: 8px;
-  border-radius: 10px;
-  border-color: rgb(0, 24, 90);
-  box-shadow: 5px 5px 10px;
+    border-radius: 10px 10px 30px 10px;
+    width: 375px;
 }
+
+.triangle2 {
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(to top left, rgb(0, 24, 90) 50%, transparent 0);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: left, right;
+    margin-bottom: 150px;
+    margin-left: 87%;
+    margin-top: -10px;
+}
+
 
 /* ------------------------------------------------------------------------------- */
 
-.shipping_map img {
-  width: 700px;
-  margin-right: 380px;
-  margin-left: 380px;
-  margin-bottom: 0px;
 
-  border-style: solid;
-  border-width: 8px;
-  border-radius: 10px;
-  border-color: rgb(0, 24, 90);
-  box-shadow: 5px 5px 10px;
-  transition: transform .5s ease;
-  transform: scale(0.9);
-}
+.shipping_map {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .shipping_map img {
+    border-radius: 30px;
+    width: 800px;
+  }
 
-.shipping_map img:hover {
-  transform: scale(1);
-}
-
-/* ------------------------------------------------------------------------------- */
-.Printer_Details {
-  display: flex;
-  justify-content: center;
-  margin-right: 200px;
-  margin-left: 200px;
-  margin-top: 110px;
-  margin-bottom: 25px;
-}
-
-.Printer_Details img {
-  border-style: solid;
-  border-width: 8px;
-  border-radius: 10px;
-  border-color: rgb(0, 24, 90);
-  box-shadow: 5px 5px 10px;
-  width: 350px;
-}
-
-.Printer_Details p {
-  font-family: "Oswald", sans-serif;
-  font-size: 19px;
-  color: rgb(221, 224, 253);
-  margin-left: 30px;
-}
-
-.Printer_Details li {
-  font-family: "Oswald", sans-serif;
-  font-size: 19px;
-  color: rgb(221, 224, 253);
-  margin-left: 30px;
-  list-style-type: disc;
-}
 
 /* ------------------------------------------------------------------------------- */
 
-.Filament_Details {
-  display: flex;
-  justify-content: center;
-  margin-right: 200px;
-  margin-left: 200px;
-  margin-top: 110px;
-  margin-bottom: 100px;
+
+  
+.printer_details img {
+    border-radius: 30px;
+    width: 800px;
+    margin-top: 200px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+  
+.printer_details p {
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    max-width: 800px;
+    color: rgb(221, 224, 253);
+    text-align: center;
+}
+  
+.printer_details li {
+    font-family: "Oswald", sans-serif;
+    font-size: 19px;
+    color: rgb(221, 224, 253);
+    margin-left: 30px;
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 10%;
 }
 
-.Filament_Details img {
-  border-style: solid;
-  border-width: 8px;
-  border-radius: 10px;
-  border-color: rgb(0, 24, 90);
-  box-shadow: 5px 5px 10px;
-  width: 350px;
+h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    color: #fff;
+    margin-top: 0;
+    margin-left: 30px;
+    text-align: center;
+    margin-top: 100px;
 }
 
-.Filament_Details p {
-  font-family: "Oswald", sans-serif;
-  font-size: 19px;
-  color: rgb(221, 224, 253);
-}
-
-.Filament_Details li {
-  font-family: "Oswald", sans-serif;
-  font-size: 19px;
-  color: rgb(221, 224, 253);
-  list-style-type: disc;
-}
 
 /* ------------------------------------------------------------------------------- */
 
-h3 {
-  font-family: "Oswald", sans-serif;
-  font-size: 60px;
-  color: rgb(0, 24, 90);
-  text-align: center;
-  margin-bottom: 0;
+
+
+h4 {
+    font-family: "Oswald", sans-serif;
+    font-size: 60px;
+    color: rgb(0, 24, 90);
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 0;
 }
 
 .Form_Box {
-  align-content: center;
-  background-color: rgb(0, 24, 90);
-  text-align: center;
-  padding-top: 50px;
+    align-content: center;
+    background-color: rgb(0, 24, 90);
+    text-align: center;
+    padding-top: 50px;
+    margin: 0px;
+    width: 100%;
+}  
+
+h5 {
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+    color: #0000ff;
+    align-self: center;
+    padding-bottom: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
 }
 
 h6 {
-  font-family: "Oswald", sans-serif;
-  font-size: 25px;
-  color: #0000ff;
-  align-self: center;
-  padding-bottom: 150px;
-  margin-left: 300px;
-  margin-right: 300px;
-  text-align: center;
-}
-
-h4 {
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  color: #fff;
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: -40px;
-  padding: 0;
-}
-
-/* ------------------------------------------------------------------------------- */
-
-@media only screen and (min-width: 1920px) {
-  .Bio p {
-    margin-left: 200px;
-    font-size: 29px;
-    margin-top: 50px;
+    font-family: "Oswald", sans-serif;
+    font-size: 11px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -25px;
+    padding: 0;
   }
-  .Bio img {
-    width: 600px;
-    height: 600px;
-    margin-right: 200px;
-    margin-top: 30px;
-  }
-
-  .Printer_Details img {
-    width: 600px;
-    margin-top: 150px;
-    margin-left: 200px;
-  }
-
-  .Printer_Details p {
-    margin-top: 150px;
-    font-size: 29px;
-    margin-right: 200px;
-  }
-
-  .Printer_Details li {
-    font-size: 29px;
-  }
-
-  .Note {
-    margin: 0;
-    margin-top: -30px;
-  }
-
-  .shipping_map img {
-    width: 1235px;
-    margin-top: 200px;
-  }
-
-  .Filament_Details img {
-    width: 1000px;
-    height: 600px;
-    margin-top: 150px;
-    margin-right: 200px;
-  }
-
-  .Filament_Details p {
-    margin-top: 150px;
-    font-size: 29px;
-    margin-left: 200px;
-  }
-
-  .Filament_Details li {
-    font-size: 29px;
-    margin-left: 200px;
-  }
-
-  h1 {
-    font-size: 50px;
-  }
-
-  h3 {
-    font-size: 100px;
-    margin-top: 300px;
-  }
-
-  h6 {
-    font-size: 40px;
-  }
-
-  h4 {
-    margin-top: -75px;
-  }
-
-  .Note {
-    margin-top: -100px;
-  }
-
-  .Example_1 {
-    width: 380px;
-    margin-left: 200px;
-  }
-
-  .Example_2 {
-    width: 380px;
-  }
-
-  .Example_3 {
-    width: 380px;
-    margin-right: 200px;
-  }
-
-  .Example_4 {
-    width: 380px;
-  }
-
-  .Example_5 {
-    width: 380px;
-    margin-left: 200px;
-  }
-
-  .Example_6 {
-    width: 380px;
-    margin-right: 200px;
-  }
-}
             
           </style>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="Home.js"></script>
     </head>
-<body>
-<nav class="Top_Bar">
-    <div class="Special_Deal">
-        <h2> 🚧 This site is Under Construction, and will be complete soon. 🚧 <u></u></h2>
-    </div>
+    <body>
 
-    <div class="Top_Bar_Inner">
-        <img src="Images/PLAPRINTS_Logo-text.png" alt="PLAPRINTS Text" /> 
-        <div class="Link_Style">
-            <a href="file:///C:/Users/adamp/Downloads/Main%20Code/Index.html" class="About_Me"><b>About Me</b></a>
-            <a href="#Examples" class="Examples"><b>Examples</b></a>
-            <a href="#Printing_Details" class="Printing_Details"><b>Printer</b></a>
-            <a href="#Shipping" class="Shipping"><b>Shipping</b></a>
-            <a href="#Filament_Details2" class="Filament_Details2"><b>Filament</b></a>
-            <a href="#Order" class="Order"><b>Order</b></a>
+        <nav>
+            <div class="upper_nav">
+                <p>🚧 This site is Under Construction, and will be complete soon. 🚧</p>
+            </div>
+
+            <img src="Images/PLAPRINTS_Logo-text.png" alt="PLAPRINTS Text" />
+        </nav>
+
+        <div class="buisness_pitch">
+            <img src="Images/Photo of Me.jpg" alt="Photo of Me"/>
+            <p>Bringing you custom 3D printed household objects.</p>
         </div>
-    </div>
-</nav>
 
-<div class="Bio">
-    <p>
-        Hi I’m Adam, the creator of PLA Prints. I have been using a Creality Ender 3 printer for the past 3 years and have lots of experience with different CAD programs. I have begun to realize the need for 3D printing in everyone's lives. There are just too many benefits of owning one! However, not everyone owns a 3D printer or has the skills to 3D print household objects. I am trying to create the availability of these resources through PLA Prints.
-        <br>
-        <br>
-        I’m 14 years old, and I am always improving my skills. I’m excited to meet customers and help them fill their needs. Besides 3D printing, I am a human being with many other enjoyments. I love playing tennis, designing model rockets, swinging some golf clubs, and working on an FTC team. 
-    </p>
-    <img src="Images/Photo of Me.jpg" alt="Photo of Me"/>
-</div>
-
-<h1>
-    Here are a few examples of things I have created in the past.
-</h1>
-
-<div class="Example_container">
-    <img src="Images/Watering Can.png" class="Example_1" alt="Watering Can"/>
-    <img src="Images/Keychain.png" class="Example_2" alt="My 3D Printer"/>
-    <img src="Images/Gas Cap.png" class="Example_3" alt="My 3D Printer"/>
-    <img src="Images/Watch Part.png" class="Example_5" alt="My 3D Printer"/>
-    <img src="Images/Outlet cover.png" class="Example_4" alt="My 3D Printer"/>
-    <img src="Images/Coaster.png" class="Example_6" alt="My 3D Printer"/>
-</div>
-
-<div class="Main_Box">
-    
-</div>
-
-<div class="Printer_Details">
-    <img src="Images/3D_Printer.jpg" class="Printer_Image" alt="My 3D Printer"/>
-    <div class="Printer_Details_Header">
-        <p>
-        To the left, you can see my Creality Ender 3 Original printer. It has been modified with a few 3D printed upgrades, and runs quite well. I use Cura to export gcode files to the printer. Generally, I use the settings listed below.
+        <p class="description">
+            Hi I’m Adam, the creator of PLA Prints. I have been using a Creality Ender 3 printer for the past 3 years and have lots of experience with different CAD programs. I have begun to realize the need for 3D printing in everyone's lives. There are just too many benefits of owning one! However, not everyone owns a 3D printer or has the skills to 3D print household objects. I am trying to create the availability of these resources through PLA Prints.
         </p>
-        <h1>
-        Basic Cura Settings
-        </h1>
 
-        <li><b>Extruder temperature:</b> 200° C</li>
-        <li><b>Bed temperature:</b> 60° C</li>
-        <li><b>Infill:</b> 10% - 20% grid</li>
-        <li><b>Layer thickness:</b> 0.2mm</li>
-        <li>Support Filament is optional</li>
-        <li><b>Speed:</b> 50mm/sec</li>
-    </div>
-</div>
+        <div class="triangle"></div>
 
-<div class="shipping_map">
-    <a href="https://www.google.com/maps/d/u/0/edit?mid=1rFn5lc6Yq_2gf6248fWMyDGnUD_nAKaC&usp=sharing" target="_blank"><img src="Images/PLA-Prints_Shipping.png" alt="Shipping Locations"></a>
-</div>
+        <div class="Example_container">
+            <img src="Images/Watering Can.png" class="Example_1" alt="Watering Can"/>
+            <img src="Images/Keychain.png" class="Example_2" alt="My 3D Printer"/>
+            <img src="Images/Gas Cap.png" class="Example_3" alt="My 3D Printer"/>
+            <img src="Images/Watch Part.png" class="Example_4" alt="My 3D Printer"/>
+            <img src="Images/Outlet cover.png" class="Example_5" alt="My 3D Printer"/>
+            <img src="Images/Coaster.png" class="Example_6" alt="My 3D Printer"/>
+        </div>
 
-<div class="Filament_Details">
-    <div class="Filament_Details_Header">
-        <p>
-        As stated in the title, I print PLA filament. There are many positive benefits of this filament that should be mentioned. It has the perfect melting point, is biodegradable, comes in a variety of colors, and it is easy to paint. More specifics about my PLA filament can be found below.
-        </p>
-        <h1>
-        Filament Details
-        </h1>
+        <div class="triangle2"></div>
 
-        <li><b>Brand:</b> Hatchbox PLA</li>
-        <li><b>Diameter:</b> 1.75mm</li>
-        <li><b>Color:</b> Black, White, and Navy <b id="Order"><br><br>Note: </b> other colors of filament may be available at times, but cannot be guaranteed. Paint can be used as a finish.</li>
-    </div>
-<img src="Images/Filament_Cropped.jpg" class="Filament_Image" alt="Hatchbox PLA Filament"/>
-</div>
+        <h4>
+            Tap for more information.
+        </h4>
 
-<h3>
-Place Your Order Now!
-</h3>
-<div class="Form_Box">
-    <h6>
-    Sorry, PLA Prints Is closed. However, it will be opened in the near future. Normally, a google form is located here so that you can begin your purchase at PLA Prints. I hope to see you soon!
-    </h6>
-</div>
-<h4>
-This site was created by Adam Pullen. (adampullen07@gmail.com)
-</h4>
+        <div class="shipping_map">
+            <a href="https://www.google.com/maps/d/u/0/edit?mid=1rFn5lc6Yq_2gf6248fWMyDGnUD_nAKaC&usp=sharing" target="_blank">
+                <img src="Images/PLA-Prints_Shipping.png" alt="Shipping Locations">
+            </a>
+        </div>
 
-</body>
+        <div class="printer_details">
+            <img src="Images/3D_Printer.jpg" class="Printer_Image" alt="My 3D Printer"/>
+            <div class="Printer_Details_">
+
+                <h1>
+                Basic Cura Settings
+                </h1>
+        
+                <li><b>Extruder temperature:</b> 200° C</li>
+                <li><b>Bed temperature:</b> 60° C</li>
+                <li><b>Infill:</b> 10% - 20% grid</li>
+                <li><b>Layer thickness:</b> 0.2mm</li>
+                <li>Support Filament is optional</li>
+                <li><b>Speed:</b> 50mm/sec</li>
+                
+            </div>
+        </div>
+
+        <h4>
+            Place Your Order Now!
+        </h4>
+
+        <div class="Form_Box">
+            <h5>
+            Sorry, PLA Prints Is closed. However, it will be opened in the near future. Normally, a google forum is located here so that you can begin your purchase at PLA Prints. I hope to see you soon!
+            </h5>
+        </div>
+        
+        <h6>
+        This site was created by Adam Pullen. (adampullen07@gmail.com)
+        </h6>
+
+    </body>
 </html>
