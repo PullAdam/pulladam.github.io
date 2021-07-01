@@ -6,120 +6,597 @@
             @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
             
-            <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="Index.css" />
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-        </style>
+            body {
+    background-color: #0000ff;
+    margin: 0;
+    padding: 0;
+}
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* Nav Bar section */
 
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
-    </head>
-    <body>
+.upper_nav {
+    background-color: #ff6600;
+    margin: 0;
+    padding: 5px;
+}
+
+.upper_nav p {
+    font-size: 12px;
+    font-family: "Oswald", sans-serif;
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+}
+
+nav {
+    background-color: #fff;
+    box-shadow: 0px 0px 20px #fff;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+}
+
+nav img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    padding: 15px;
+}
 
 
-        <div class="loader loader--active">
-            <div class="loader__icon">
-              <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
-                <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"></path>
-                <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0C22.32,8.481,24.301,9.057,26.013,10.047z"></path>
-                <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="0.5s" repeatCount="indefinite"></animateTransform>
-              </svg>
-            </div>
-            <div class="loader__tile"></div>
-            <div class="loader__tile"></div>
-            <div class="loader__tile"></div>
-            <div class="loader__tile"></div>
-            <div class="loader__tile"></div>
-          </div>
+/* Buisness Pitch + My Face! */
 
-          <div class="everything">
-            <nav>
-                <div class="upper_nav">
-                    <p>🚧 This site is Under Construction, and will be complete soon. 🚧</p>
-                </div>
 
-                <img src="Images/PLAPRINTS_Logo-text.png" alt="PLAPRINTS Text" />
-            </nav>
+.buisness_pitch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background-color: rgb(0, 24, 90);
+    padding: 20px;
+}
 
-            <div class="buisness_pitch">
-                    <img src="Images/Photo of Me.jpg" alt="Photo of Me"/>
-                    <p>Bringing <u>you</u> custom 3D printed household objects.</p>
-            </div>
+.buisness_pitch img {
+    width: auto;
+    height: 100px;
+    border-radius: 5px 5px 30px 5px;
+    margin: 5px;
+}
 
-            <p class="description">
-                Hi I’m Adam, the creator of PLA Prints. I have been using a Creality Ender 3 printer for the past 3 years and have lots of experience with different CAD programs. I have begun to realize the need for 3D printing in everyone's lives. There are just too many benefits of owning one! However, not everyone owns a 3D printer or has the skills to 3D print household objects. I am trying to create the availability of these resources through PLA Prints.
-                <div class="text-two">I’m 14 years old, and I am always improving my skills. I’m excited to meet customers and help them fill their needs. Besides 3D printing, I am a human being with many other enjoyments. I love playing tennis, designing model rockets, swinging some golf clubs, and working on an FTC team.</div>
-            </p>
+.buisness_pitch p {
+    font-family: 'Staatliches', sans-serif;
+    color: rgb(221, 224, 253);
+    font-size: 20px;
+    margin: 5px;
+}
 
-            <div class="triangle"></div>
+.description {
+    font-family: "Oswald", sans-serif;
+    color: rgb(221, 224, 253);
+    font-size: 15px;
+    margin: 10%;
+    margin-bottom: 0;
+}
 
-            <div class="Example_container">
-                <img src="Images/Watering Can.png" class="Example_1" alt="Watering Can"/>
-                <img src="Images/Keychain.png" class="Example_2" alt="My 3D Printer"/>
-                <img src="Images/Gas Cap.png" class="Example_3" alt="My 3D Printer"/>
-                <img src="Images/Watch Part.png" class="Example_4" alt="My 3D Printer"/>
-                <img src="Images/Outlet cover.png" class="Example_5" alt="My 3D Printer"/>
-                <img src="Images/Coaster.png" class="Example_6" alt="My 3D Printer"/>
-            </div>
+.text-two {
+    font-family: "Oswald", sans-serif;
+    color: rgb(221, 224, 253);
+    font-size: 15px;
+    margin: 10%;
+    margin-bottom: 100px;
+}
 
-            <div class="triangle2"></div>
+/* Example Images (fancy triangles) */
 
-            <h4>
-                Tap for more information.
-            </h4>
 
-            <div class="shipping_map">
-                <a href="https://www.google.com/maps/d/u/0/edit?mid=1rFn5lc6Yq_2gf6248fWMyDGnUD_nAKaC&usp=sharing" target="_blank">
-                    <img src="Images/PLA-Prints_Shipping.png" alt="Shipping Locations">
-                </a>
-            </div>
+.triangle {
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient(to bottom right, rgb(0, 24, 90) 50%, transparent 0);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: left, right;
+    float: left;
+    margin-left: 10px;
+    margin-top: -50px;
+}
 
-            <div class="images">
-                <img src="Images/3D_Printer.jpg" class="Printer_Image" alt="My 3D Printer"/>
-                <img src="Images/Filament_Cropped.jpg" class="Filament_Image" alt="Filament">
-            </div>
+.Example_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 20px;
+    justify-content: center;
+    vertical-align: middle;
+    grid-gap: 10px;
+}
+  
+.Example_1 {
+    border-radius: 20px 5px 5px 5px;
+    width: 140px;
+}
+  
+.Example_2 {
+    border-radius: 5px 20px 5px 5px;
+    width: 140px;
+}
+  
+.Example_3 {
+    border-radius: 5px 5px 5px 5px;
+    width: 140px;
+}
 
-                <div class="list">
+.Example_4 {
+    border-radius: 5px 5px 5px 5px;
+    width: 140px;
+}
+  
+.Example_5 {
+    border-radius: 5px 5px 5px 20px;
+    width: 140px;
+}
+  
+.Example_6 {
+    border-radius: 5px 5px 20px 5px;
+    width: 140px;
+}
 
-                    <h1>
-                    Basic Settings
-                    </h1>
-            
-                    <li><b>Extruder temperature:</b> 200° C</li>
-                    <li><b>Bed temperature:</b> 60° C</li>
-                    <li><b>Infill:</b> 10% - 20% grid</li>
-                    <li><b>Layer thickness:</b> 0.2mm</li>
-                    <li>Support Filament is optional</li>
-                    <li><b>Speed:</b> 50mm/sec</li>
+.triangle2 {
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient(to top left, rgb(0, 24, 90) 50%, transparent 0);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: left, right;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: -50px;
+}
 
-                    <li><b>Filament Brand:</b> Hatchbox PLA</li>
-                    <li><b>Filament Diameter:</b> 1.75mm</li>
-                    <li><b>Filament Color:</b> Black, White, and Navy <b id="Order"><br><br>Note: </b> other colors of filament may be available at times, but cannot be guaranteed. Paint can be used as a finish.</li>
-                </div>
 
-            <h4>
-                Place Your Order Now!
-            </h4>
+/* Shipping :D */
 
-            <div class="Form_Box">
-                <h5>
-                Sorry, PLA Prints Is closed. However, it will be opened in the near future. Normally, a google forum is located here so that you can begin your purchase at PLA Prints. I hope to see you soon!
-                </h5>
-            </div>
-            
-            <h6>
-            This site was created by Adam Pullen.
-            </h6>
-        </div>
 
-        <script src="Index.js"></script>
-    </body>
-</html>
+.shipping_map {
+    display: flex;
+    justify-content: center;
+    margin-top: -50;
+  }
+  
+  .shipping_map img {
+    border-radius: 10px;
+    width: 300px;
+  }
+
+
+/* Printer/Filament Details */
+
+
+.images {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+  
+.images img {
+    border-radius: 10px;
+    width: 140px;
+    margin: 10px;
+}
+  
+.list p {
+    font-family: "Oswald", sans-serif;
+    font-size: 10px;
+    max-width: 800px;
+    color: rgb(221, 224, 253);
+    text-align: center;
+}
+  
+.list li {
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    color: rgb(221, 224, 253);
+    list-style-type: disc;
+    text-align: left;
+    max-width: 300px;
+    margin: auto;
+}
+
+h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* Google form (ordering section) */
+
+
+h4 {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    color: rgb(0, 24, 90);
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+
+.Form_Box {
+    align-content: center;
+    background-color: rgb(0, 24, 90);
+    text-align: center;
+    padding-top: 200px;
+    margin: 0px;
+    width: 100%;
+    padding-bottom: 150px;
+}  
+
+h5 {
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    color: #0000ff;
+    align-self: center;
+    padding-bottom: 30px;
+    margin-top: -30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+h6 {
+    font-family: "Oswald", sans-serif;
+    font-size: 11px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0;
+    margin-top: 10px;
+}
+
+
+/* @media Queries (responsive stuff...) */
+
+
+/* Teeny Tiny Phone Screens */
+@media only screen and (max-width: 350px) {
+
+    .triangle {
+        display: none;
+    }
+
+    .triangle2 {
+        display: none;
+    }
+}
+
+/* Extra Text Stuff Deletion */
+@media only screen and (max-width: 671px) {
+
+    .text-two {
+        display: none;
+    }
+
+    .description {
+        margin-bottom: 100px;
+    }
+
+}
+
+
+/* Awkward buisness pitch header sixe :| */
+@media only screen and (min-width: 469px) {
+
+    .buisness_pitch p {
+        font-size: 30px;
+    }
+
+    .buisness_pitch img {
+        height: 150px;
+        margin: 30px;
+    }
+
+    .triangle {
+        margin-left: 50px;
+    }
+
+    .triangle2 {
+        margin-right: 50px;
+    }
+
+}
+
+/* Jump #3! 700px */
+@media only screen and (min-width: 700px) {
+    
+    .description {
+        font-size: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .text-two {
+        font-size: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 120px;
+        margin-top: 30px;
+    }
+
+    .upper_nav p {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    nav img {
+        width: 300px;
+        padding: 20px;
+    }
+
+    .buisness_pitch p {
+        font-size: 40px;
+    }
+
+    .buisness_pitch img {
+        height: 200px;
+    }
+
+    .Example_1 {
+        width: 200px;
+    }
+      
+    .Example_2 {
+        width: 200px;
+    }
+      
+    .Example_3 {
+        width: 200px;
+    }
+    
+    .Example_4 {
+        width: 200px;
+    }
+      
+    .Example_5 {
+        width: 200px;
+    }
+      
+    .Example_6 {
+        width: 200px;
+    }
+
+    .shipping_map img {
+        width: 500px;
+      }
+
+      .images img {
+        width: 240px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .list p {
+        font-size: 20px;
+    }
+
+    .list li {
+        font-size: 15px;
+        max-width: 500px;
+    }
+
+    h4 {
+        font-size: 50px;
+    }
+
+    h5 {
+        font-size: 30px;
+    }
+
+    h6 {
+        font-size: 15px;
+    }
+
+}
+
+/* 900px Resolution */
+@media only screen and (min-width: 900px) {
+
+    .description {
+        font-size: 30px;
+    }
+
+    .text-two {
+        font-size: 30px;
+    }
+
+    .buisness_pitch img {
+        height: 300px;
+        margin: 50px;
+    }
+
+    .buisness_pitch p {
+        font-size: 50px;
+        margin: 50px;
+    }
+
+    .list p {
+        font-size: 10px;
+        max-width: 1000px;
+    }
+
+    .list li {
+        font-size: 20px;
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+}
+
+/* Small Laptop Resolution */
+@media only screen and (min-width: 1024px) {
+
+    .upper_nav p {
+        font-size: 30px;
+    }
+
+    nav img {
+        width: 400px;
+    }
+
+    .description p {
+        font-size: 50px;
+    }
+
+}
+
+/* Laptop Resolution */
+@media only screen and (min-width: 1366px) {
+
+    
+
+
+}
+
+/* Moniter (HD Resolution) */
+@media only screen and (min-width: 1919px) {
+    
+    .upper_nav p {
+        font-size: 24px;
+        padding: 5px;
+    }
+
+    .upper_nav {
+        padding: 5px;
+    }
+    
+    nav img {
+        width: 500px;
+    }
+
+    .buisness_pitch img {
+        height: 400px;
+        margin: 60px;
+    }
+    
+    .buisness_pitch p {
+        font-size: 100px;
+        margin-right: 140px;
+        margin-top: 140px;
+        margin-bottom: 140px;
+    }
+
+}
+  
+
+/* Animated loading stuff (IDK how it works :|) */
+
+  .loader {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100vh;
+    transition: width 0s 1.4s ease;
+  }
+  .loader .loader__icon {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .loader .loader__tile {
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 20%;
+    background-color: #00185a;
+    transition: width 0.7s ease;
+    z-index: 2;
+  }
+  
+  .loader .loader__tile:nth-child(0) {
+    top: calc(-1 * 20%);
+    transition-delay: -0.2s;
+  }
+  .loader .loader__tile:nth-child(1) {
+    top: calc(0 * 20%);
+    transition-delay: 0s;
+  }
+  .loader .loader__tile:nth-child(2) {
+    top: calc(1 * 20%);
+    transition-delay: 0.2s;
+  }
+  .loader .loader__tile:nth-child(3) {
+    top: calc(2 * 20%);
+    transition-delay: 0.4s;
+  }
+  .loader .loader__tile:nth-child(4) {
+    top: calc(3 * 20%);
+    transition-delay: 0.6s;
+  }
+  .loader .loader__tile:nth-child(5) {
+    top: calc(4 * 20%);
+    transition-delay: 0.8s;
+  }
+  .loader--active {
+    width: 100%;
+    transition-delay: 0s;
+  }
+
+  .loader--active .loader__tile {
+    width: 100%;
+  }
+  .loader--active .loader__tile:nth-child(0) {
+    transition-delay: -0.3s;
+  }
+  .loader--active .loader__tile:nth-child(1) {
+    transition-delay: 0s;
+  }
+  .loader--active .loader__tile:nth-child(2) {
+    transition-delay: 0.3s;
+  }
+  .loader--active .loader__tile:nth-child(3) {
+    transition-delay: 0.6s;
+  }
+  .loader--active .loader__tile:nth-child(4) {
+    transition-delay: 0.9s;
+  }
+  .loader--active .loader__tile:nth-child(5) {
+    transition-delay: 1.2s;
+  }
+
+
+  .everything {
+    background-color: #0000ff;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    animation: fadeInAnimation 0.75s ease-in forwards 1.2s;
+  }
+
+  @keyframes fadeInAnimation {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+     }
+
+  }
             
         </style>
 
