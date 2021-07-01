@@ -599,17 +599,8 @@ h6 {
   }
             
         </style>
-    
-        <script>
-           var $loader = document.querySelector('.loader')
 
-           window.onload = function() {
-            $loader.classList.remove('loader--active')
-           };</script>
-        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
     </head>
     <body>
 
@@ -708,6 +699,16 @@ h6 {
             This site was created by Adam Pullen.
             </h6>
         </div>
-    
+
+        <script>
+
+            var $loader = document.querySelector('.loader')
+
+            window.onload = function() {
+            $loader.classList.remove('loader--active')
+            };
+
+        </script>
+
     </body>
 </html>
